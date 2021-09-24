@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans  
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+		<bean name="student1" class="com.collectionFramework.Student">
+			<property name="Id" value="01" />
+			<property name="Name" value="Nikhil Pandey" />
+			<property name="PhoneNo" >
+				<list>
+					<value>9984008863</value>
+					<value>7874746028</value>
+					<value>9919759401</value>
+				</list>
+			</property>
+			<property name="Address">
+				<set>
+					<value>Ahmedabad</value>
+					<value>Surat</value>
+				</set>
+			</property>
+			<property name="courses">
+			 	<map>
+			 		<entry key="MCA" value="2 years" />
+			 		<entry key="BCA" value="3 years" />
+			 	</map>
+			</property>
+		</bean>
+</beans>
